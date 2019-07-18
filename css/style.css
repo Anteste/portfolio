@@ -499,7 +499,8 @@ p {
 
 .bg-tl::after,
 .bg-cm::after,
-.bg-pp::after {
+.bg-pp::after,
+.bg-sch::after {
   content: 'Telean';
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
@@ -519,9 +520,14 @@ p {
   content: 'Dark PayPal';
 }
 
+.bg-sch::after {
+  content: 'Schoolify';
+}
+
 .link-tl,
 .link-cm,
-.link-pp {
+.link-pp,
+.link-sch {
   z-index: -1;
   opacity: 0;
   -webkit-user-select: none;
@@ -573,12 +579,11 @@ p {
 }
 
 .projects__boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
   width: 75%;
 }
 
@@ -592,7 +597,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 31%;
   height: 212px;
   position: relative;
   color: #fff;
@@ -816,9 +820,6 @@ p {
   .projects__boxes {
     width: 95%;
   }
-  .projects__box {
-    width: 32%;
-  }
 }
 
 @media screen and (max-width: 670px) {
@@ -953,4 +954,4 @@ p {
     padding: 1px !important;
   }
 }
-/*# sourceMappingURL=style8.css.map */
+/*# sourceMappingURL=style.css.map */

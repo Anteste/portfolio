@@ -163,6 +163,25 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
+						class="projects__box bg-sch"
+					>
+						<img
+							class="projects__box--bg"
+							src="img/bg-sch.webp"
+							alt="schoolify background"
+						/>
+						<a
+							class="link-sch"
+							href="https://schoolify-app.herokuapp.com/"
+							target="_blank"
+							rel="noopener"
+							>Click to view</a
+						>
+					</div>
+					<div
+						data-aos="fade-up"
+						data-aos-once="true"
+						data-aos-delay="100"
 						class="projects__box bg-tl"
 					>
 						<img
@@ -181,7 +200,7 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
-						data-aos-delay="100"
+						data-aos-delay="200"
 						class="projects__box bg-cm"
 					>
 						<img
@@ -200,7 +219,7 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
-						data-aos-delay="200"
+						data-aos-delay="300"
 						class="projects__box bg-pp"
 					>
 						<img
@@ -324,6 +343,12 @@
 			$('.bg-pp').mouseout(function() {
 				$('.link-pp').css('opacity', '0');
 			});
+			$('.bg-sch').mouseover(function() {
+				$('.link-sch').css('opacity', '1');
+			});
+			$('.bg-sch').mouseout(function() {
+				$('.link-sch').css('opacity', '0');
+			});
 
 			// OPEN PROJECTS
 			$('.bg-tl').click(function() {
@@ -336,6 +361,9 @@
 				window.open(
 					'https://github.com/liorgrossman/darkness/blob/master/chrome-extension/themes/websites/paypal.scss'
 				);
+			});
+			$('.bg-sch').click(function() {
+				window.open('https://schoolify-app.herokuapp.com/');
 			});
 
 			$('.hamburger').click(function() {
