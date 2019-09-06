@@ -40,6 +40,7 @@ p {
 }
 
 .active {
+  background-color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   color: #fff;
   width: 100px;
@@ -144,6 +145,7 @@ p {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -279,6 +281,7 @@ p {
 .hero__typo {
   font-weight: 800;
   font-size: 4.5rem;
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -425,6 +428,7 @@ p {
 }
 
 .about__basic h2 {
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -484,6 +488,7 @@ p {
 }
 
 .about__tools h2 {
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -553,6 +558,7 @@ p {
 }
 
 .projects h1 {
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -709,6 +715,7 @@ p {
 }
 
 .contact form button .btn-text {
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
@@ -762,6 +769,7 @@ p {
 
 .footer p {
   font-weight: 500;
+  color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
   -webkit-background-clip: text;
   background-clip: text;
