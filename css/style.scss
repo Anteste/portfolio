@@ -176,6 +176,11 @@ p {
 	&__logo {
 		width: 60px;
 		height: 60px;
+		transition: 1s;
+
+		&:hover {
+			transform: rotate(360deg);
+		}
 	}
 
 	&__nav {
@@ -315,6 +320,11 @@ p {
 			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 			user-select: none;
 			z-index: 1;
+			transition: 0.5s;
+
+			&:hover {
+				transform: rotate(360deg);
+			}
 		}
 
 		img.line {
@@ -336,6 +346,12 @@ p {
 			-webkit-background-clip: text;
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
+			width: fit-content;
+			transition: 0.2s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 
 		a {
@@ -352,6 +368,10 @@ p {
 			user-select: none;
 			position: relative;
 			top: 1.4rem;
+
+			&:hover {
+				animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+			}
 		}
 	}
 	&__face {
@@ -380,6 +400,15 @@ p {
 			-webkit-background-clip: text;
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
+			transition: 0.2s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+
+		.tools-icon:hover {
+			animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 		}
 	}
 
@@ -549,6 +578,12 @@ p {
 			padding: 1em;
 			margin: 0.5em;
 			user-select: none;
+			transition: 0.2s;
+
+			&:focus,
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 		textarea {
 			width: 37.5rem;
@@ -562,6 +597,12 @@ p {
 			font-weight: 700;
 			padding: 0;
 			cursor: pointer;
+			transition: 0.2s;
+
+			&:hover,
+			&:focus {
+				transform: scale(1.1);
+			}
 
 			.btn-text {
 				color: #6b65e7;
@@ -591,6 +632,12 @@ p {
 	.social-logo {
 		width: 30px;
 		height: 30px;
+		transition: 1s;
+
+		&:hover,
+		&:focus {
+			transform: rotate(360deg);
+		}
 	}
 
 	.my-logo {
@@ -823,5 +870,28 @@ p {
 		width: 5rem !important;
 		height: 5rem !important;
 		padding: 1px !important;
+	}
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
 	}
 }

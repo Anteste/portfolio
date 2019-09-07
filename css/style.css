@@ -214,6 +214,13 @@ p {
 .navbar__logo {
   width: 60px;
   height: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navbar__logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .navbar__nav {
@@ -403,6 +410,13 @@ p {
       -ms-user-select: none;
           user-select: none;
   z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about__box img.face:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .about__box img.line {
@@ -433,6 +447,16 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about__basic h2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .about__basic a {
@@ -452,6 +476,11 @@ p {
           user-select: none;
   position: relative;
   top: 1.4rem;
+}
+
+.about__basic img:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
 .about__face {
@@ -493,6 +522,18 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about__tools h2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.about__tools .tools-icon:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
 .about h1 {
@@ -697,6 +738,17 @@ p {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact form input:focus, .contact form input:hover,
+.contact form textarea:focus,
+.contact form textarea:hover,
+.contact form button:focus,
+.contact form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .contact form textarea {
@@ -712,6 +764,13 @@ p {
   font-weight: 700;
   padding: 0;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact form button:hover, .contact form button:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact form button .btn-text {
@@ -759,6 +818,13 @@ p {
 .footer .social-logo {
   width: 30px;
   height: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer .social-logo:hover, .footer .social-logo:focus {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .footer .my-logo {
@@ -960,6 +1026,54 @@ p {
     width: 5rem !important;
     height: 5rem !important;
     padding: 1px !important;
+  }
+}
+
+@-webkit-keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
