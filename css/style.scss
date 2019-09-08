@@ -109,6 +109,14 @@ p {
 	top: 48%;
 }
 
+.rotate {
+	animation: rotate 1s;
+}
+
+.scale {
+	animation: scale 0.5s infinite alternate;
+}
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -220,8 +228,18 @@ p {
 	&__content {
 		text-align: center;
 
+		.centered {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		img {
 			user-select: none;
+		}
+
+		.secondary {
+			display: none;
 		}
 	}
 
@@ -640,6 +658,10 @@ p {
 		}
 	}
 
+	.my-logo-footer {
+		width: 60px;
+	}
+
 	.my-logo {
 		width: 60px;
 		height: 60px;
@@ -814,6 +836,7 @@ p {
 
 		&__typo {
 			font-size: 2rem;
+			margin-top: 1rem;
 		}
 
 		&__sub {
@@ -836,8 +859,13 @@ p {
 
 	.footer {
 		margin-top: 0.5rem;
-		a {
-			width: 33.3333%;
+
+		div {
+			justify-content: space-around;
+
+			a {
+				margin: 1.2rem 0 1.2rem 0;
+			}
 		}
 	}
 }
@@ -893,5 +921,23 @@ p {
 	40%,
 	60% {
 		transform: translate3d(4px, 0, 0);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes scale {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
 	}
 }

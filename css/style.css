@@ -124,6 +124,16 @@ p {
   top: 48%;
 }
 
+.rotate {
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
+}
+
+.scale {
+  -webkit-animation: scale 0.5s infinite alternate;
+          animation: scale 0.5s infinite alternate;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -278,11 +288,27 @@ p {
   text-align: center;
 }
 
+.hero__content .centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero__content img {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.hero__content .secondary {
+  display: none;
 }
 
 .hero__typo {
@@ -827,6 +853,10 @@ p {
           transform: rotate(360deg);
 }
 
+.footer .my-logo-footer {
+  width: 60px;
+}
+
 .footer .my-logo {
   width: 60px;
   height: 60px;
@@ -979,6 +1009,7 @@ p {
   }
   .hero__typo {
     font-size: 2rem;
+    margin-top: 1rem;
   }
   .hero__sub {
     font-size: 0.7rem;
@@ -997,8 +1028,12 @@ p {
   .footer {
     margin-top: 0.5rem;
   }
-  .footer a {
-    width: 33.3333%;
+  .footer div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer div a {
+    margin: 1.2rem 0 1.2rem 0;
   }
 }
 
@@ -1074,6 +1109,50 @@ p {
   60% {
     -webkit-transform: translate3d(4px, 0, 0);
             transform: translate3d(4px, 0, 0);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=style.css.map */

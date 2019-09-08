@@ -28,7 +28,7 @@
 		<nav class="navbar">
 			<div class="navbar__container">
 				<a href="#">
-					<img src="img/logo.svg" alt="logo" class="navbar__logo"
+					<img src="img/logo.svg" alt="logo" class="navbar__logo rotate"
 				/></a>
 				<div class="hamburger">
 					<div class="hamburger__wrapper icon">
@@ -64,13 +64,22 @@
 
 		<div class="hero" id="section-home">
 			<div class="hero__content">
-				<img
-					data-aos="fade-up"
-					data-aos-once="true"
-					class="hero__avatar"
-					src="img/avatar.svg"
-					alt="avatar"
-				/>
+				<div class="centered">
+					<img
+						data-aos="fade-up"
+						data-aos-once="true"
+						class="hero__avatar primary"
+						src="img/avatar.svg"
+						alt="avatar"
+					/>
+					<img
+						data-aos="fade-up"
+						data-aos-once="true"
+						class="hero__avatar secondary"
+						src="img/avatar-1.svg"
+						alt="avatar"
+					/>
+				</div>
 				<p
 					data-aos="fade-up"
 					data-aos-once="true"
@@ -166,7 +175,7 @@
 						class="projects__box bg-sch"
 					>
 						<img
-							class="projects__box--bg"
+							class="projects__box--bg bg-sch-img"
 							src="img/bg-sch.gif"
 							alt="schoolify background"
 						/>
@@ -185,7 +194,7 @@
 						class="projects__box bg-tl"
 					>
 						<img
-							class="projects__box--bg"
+							class="projects__box--bg bg-tl-img"
 							src="img/bg-tl.gif"
 							alt="telean background"
 						/>
@@ -204,7 +213,7 @@
 						class="projects__box bg-cm"
 					>
 						<img
-							class="projects__box--bg"
+							class="projects__box--bg bg-cm-img"
 							src="img/bg-cm.gif"
 							alt="centrum moto background"
 						/>
@@ -223,7 +232,7 @@
 						class="projects__box bg-pp"
 					>
 						<img
-							class="projects__box--bg"
+							class="projects__box--bg bg-pp-img"
 							src="img/bg-pp.gif"
 							alt="dark paypal background"
 						/>
@@ -270,6 +279,9 @@
 
 		<div class="footer">
 			<div>
+				<a href="./resume.pdf" target="_blank" rel="noopener"
+					><img src="img/resume.svg" alt="resume" class="social-logo"
+				/></a>
 				<a href="mailto:me@bartzalewski.com"
 					><img src="img/mail.svg" alt="mail" class="social-logo"
 				/></a>
@@ -278,6 +290,12 @@
 				/></a>
 				<a href="https://github.com/bartzalewski" target="_blank" rel="noopener"
 					><img src="img/github.svg" alt="github" class="social-logo"
+				/></a>
+				<a
+					href="https://www.linkedin.com/in/bartzalewski"
+					target="_blank"
+					rel="noopener"
+					><img src="img/linkedin.svg" alt="linkedin" class="social-logo"
 				/></a>
 			</div>
 			<p>Bart Zalewski &copy; 2019</p>
@@ -324,6 +342,16 @@
 				$('.sidenav').toggleClass('sidenav--open');
 			});
 
+			// CHANGE AVATAR
+			$('.primary').mouseover(function() {
+				$('.primary').css('display', 'none');
+				$('.secondary').css('display', 'block');
+			});
+			$('.secondary').mouseout(function() {
+				$('.primary').css('display', 'block');
+				$('.secondary').css('display', 'none');
+			});
+
 			// PROJECT'S OPACITY
 			$('.bg-tl').mouseover(function() {
 				$('.link-tl').css('opacity', '1');
@@ -364,6 +392,20 @@
 			});
 			$('.bg-sch').click(function() {
 				window.open('https://schoolify-app.herokuapp.com/');
+			});
+
+			// SCALE PROJECTS
+			$('.bg-sch-img').hover(function() {
+				$('.bg-sch').toggleClass('scale');
+			});
+			$('.bg-tl-img').hover(function() {
+				$('.bg-tl').toggleClass('scale');
+			});
+			$('.bg-cm-img').hover(function() {
+				$('.bg-cm').toggleClass('scale');
+			});
+			$('.bg-pp-img').hover(function() {
+				$('.bg-pp').toggleClass('scale');
 			});
 
 			$('.hamburger').click(function() {
