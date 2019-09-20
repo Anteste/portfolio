@@ -762,12 +762,12 @@ p {
           box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
   padding: 1em;
   margin: 0.5em;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 .contact form input:focus, .contact form input:hover,

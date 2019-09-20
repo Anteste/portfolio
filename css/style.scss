@@ -597,8 +597,8 @@ p {
 			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 			padding: 1em;
 			margin: 0.5em;
-			user-select: none;
 			transition: 0.2s;
+			user-select: text;
 
 			&:focus,
 			&:hover {
