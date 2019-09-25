@@ -406,8 +406,8 @@ p {
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,8 +431,8 @@ p {
   padding: 5px;
   position: absolute;
   background: -webkit-linear-gradient(left, #6064dd, #6d5dde);
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -448,8 +448,8 @@ p {
 }
 
 .about__box img.line {
-  -webkit-filter: drop-shadow(0px 0px 15px black);
-          filter: drop-shadow(0px 0px 15px black);
+  -webkit-filter: drop-shadow(0 4px 6px 0 rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 4px 6px 0 rgba(0, 0, 0, 0.2));
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -679,8 +679,8 @@ p {
   background-clip: padding-box;
   border: solid 3px transparent;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -758,25 +758,14 @@ p {
   color: #555;
   font-weight: 500;
   font-size: 1.125rem;
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   padding: 1em;
   margin: 0.5em;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
-}
-
-.contact form input:focus, .contact form input:hover,
-.contact form textarea:focus,
-.contact form textarea:hover,
-.contact form button:focus,
-.contact form button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .contact form textarea {
