@@ -1,0 +1,16 @@
+{
+	"name": "Bart Zalewski | Front-end Developer",
+	"short_name": "bartzalewski.com",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#6B65E7",
+	"theme_color": "#6B65E7",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "img/logo-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	]
+}

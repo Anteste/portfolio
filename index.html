@@ -5,13 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#6B65E7" />
+		<meta name="apple-mobile-web-app-status-bar" content="#6B65E7" />
 		<meta
 			name="keywords"
 			content="frontend, programmer, coder, web developer, front-end developer, zalewski, bart zalewski, developer, web, javascript, html, css"
 		/>
 		<meta name="description" content="Bart Zalewski - Front-End Developer" />
 		<meta name="author" content="Bart Zalewski" />
+		<link rel="apple-touch-icon" href="img/logo-96x96.png" />
 		<link rel="canonical" href="" />
+		<link rel="manifest" href="manifest.json" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link href="img/favicon.png" rel="shortcut icon" type="image/png" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -457,6 +460,14 @@
 			$('.hamburger').click(function() {
 				$('.icon').toggleClass('close');
 			});
+
+			// SERVICE WORKER
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker
+					.register('/sw.js')
+					.then(reg => console.log('service worker registered'))
+					.catch(err => console.log('service worker not registered', err));
+			}
 		</script>
 	</body>
 </html>
