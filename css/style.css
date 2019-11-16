@@ -41,6 +41,36 @@ p {
   padding: 0;
 }
 
+::-moz-selection {
+  background: #6b65e7;
+  color: #fff;
+}
+
+::selection {
+  background: #6b65e7;
+  color: #fff;
+}
+
+.hero__typo::-moz-selection,
+.contain h2::-moz-selection,
+.contain a::-moz-selection,
+.tools__h2 h2::-moz-selection,
+.btn-text::-moz-selection {
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: white;
+}
+
+.hero__typo::selection,
+.contain h2::selection,
+.contain a::selection,
+.tools__h2 h2::selection,
+.btn-text::selection {
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+  color: white;
+}
+
 .active {
   background-color: #6b65e7;
   background: -webkit-linear-gradient(left, #4776e6, #8e54e9);

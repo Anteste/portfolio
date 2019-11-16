@@ -41,6 +41,24 @@ p {
 	padding: 0;
 }
 
+::selection {
+	background: #6b65e7;
+	color: #fff;
+}
+
+.hero__typo,
+.contain h2,
+.contain a,
+.tools__h2 h2,
+.btn-text {
+	&::selection {
+		-webkit-background-clip: initial;
+		background-clip: initial;
+		-webkit-text-fill-color: initial;
+		color: white;
+	}
+}
+
 .active {
 	background-color: #6b65e7;
 	background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
