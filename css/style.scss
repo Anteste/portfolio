@@ -443,7 +443,8 @@ p {
 .bg-tl::after,
 .bg-cm::after,
 .bg-pp::after,
-.bg-sch::after {
+.bg-sch::after,
+.bg-dj::after {
 	content: 'Telean';
 	background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
 	-webkit-background-clip: text;
@@ -467,10 +468,15 @@ p {
 	content: 'Schoolify';
 }
 
+.bg-dj::after {
+	content: 'dojrzewaj.pl';
+}
+
 .link-tl,
 .link-cm,
 .link-pp,
-.link-sch {
+.link-sch,
+.link-dj {
 	z-index: -1;
 	opacity: 0;
 	user-select: none;

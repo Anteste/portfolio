@@ -201,6 +201,25 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
+						class="projects__box bg-dj"
+					>
+						<img
+							loading="lazy"
+							class="projects__box--bg bg-dj-img"
+							src="img/bg-dj.gif"
+							alt="dojrzewaj.pl background"
+						/>
+						<a
+							class="link-dj"
+							href="https://dojrzewaj.pl/"
+							target="_blank"
+							rel="noopener"
+							>Click to view</a
+						>
+					</div>
+					<div
+						data-aos="fade-up"
+						data-aos-once="true"
 						class="projects__box bg-sch"
 					>
 						<img
@@ -251,7 +270,7 @@
 						/>
 						<a
 							class="link-cm"
-							href="http://reveur.cf/wp/"
+							href="https://reveur.dev/wp/"
 							target="_blank"
 							rel="noopener"
 							>Click to view</a
@@ -426,13 +445,19 @@
 			$('.bg-sch').mouseout(function() {
 				$('.link-sch').css('opacity', '0');
 			});
+			$('.bg-dj').mouseover(function() {
+				$('.link-dj').css('opacity', '1');
+			});
+			$('.bg-dj').mouseout(function() {
+				$('.link-dj').css('opacity', '0');
+			});
 
 			// OPEN PROJECTS
 			$('.bg-tl').click(function() {
 				window.open('https://telean-website.herokuapp.com/');
 			});
 			$('.bg-cm').click(function() {
-				window.open('http://reveur.cf/wp/');
+				window.open('https://reveur.dev/wp/');
 			});
 			$('.bg-pp').click(function() {
 				window.open(
@@ -441,6 +466,9 @@
 			});
 			$('.bg-sch').click(function() {
 				window.open('https://schoolify.app/');
+			});
+			$('.bg-dj').click(function() {
+				window.open('https://dojrzewaj.pl/');
 			});
 
 			// SCALE PROJECTS
@@ -455,6 +483,9 @@
 			});
 			$('.bg-pp-img').hover(function() {
 				$('.bg-pp').toggleClass('scale');
+			});
+			$('.bg-dj-img').hover(function() {
+				$('.bg-dj').toggleClass('scale');
 			});
 
 			$('.hamburger').click(function() {
