@@ -201,6 +201,25 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
+						class="projects__box bg-cz5p"
+					>
+						<img
+							loading="lazy"
+							class="projects__box--bg bg-cz5p-img"
+							src="img/bg-cz5p.gif"
+							alt="dojrzewaj.pl background"
+						/>
+						<a
+							class="link-cz5p"
+							href="https://dojrzewaj.pl/"
+							target="_blank"
+							rel="noopener"
+							>Click to view</a
+						>
+					</div>
+					<div
+						data-aos="fade-up"
+						data-aos-once="true"
 						class="projects__box bg-dj"
 					>
 						<img
@@ -451,6 +470,12 @@
 			$('.bg-dj').mouseout(function() {
 				$('.link-dj').css('opacity', '0');
 			});
+			$('.bg-cz5p').mouseover(function() {
+				$('.link-cz5p').css('opacity', '1');
+			});
+			$('.bg-cz5p').mouseout(function() {
+				$('.link-cz5p').css('opacity', '0');
+			});
 
 			// OPEN PROJECTS
 			$('.bg-tl').click(function() {
@@ -486,6 +511,9 @@
 			});
 			$('.bg-dj-img').hover(function() {
 				$('.bg-dj').toggleClass('scale');
+			});
+			$('.bg-cz5p-img').hover(function() {
+				$('.bg-cz5p').toggleClass('scale');
 			});
 
 			$('.hamburger').click(function() {
