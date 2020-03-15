@@ -201,6 +201,25 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
+						class="projects__box bg-pt"
+					>
+						<img
+							loading="lazy"
+							class="projects__box--bg bg-pt-img"
+							src="img/bg-pt.gif"
+							alt="pagetify background"
+						/>
+						<a
+							class="link-pt"
+							href="https://pagetify.herokuapp.com/"
+							target="_blank"
+							rel="noopener"
+							>Click to view</a
+						>
+					</div>
+					<div
+						data-aos="fade-up"
+						data-aos-once="true"
 						class="projects__box bg-cz5p"
 					>
 						<img
@@ -476,6 +495,12 @@
 			$('.bg-cz5p').mouseout(function() {
 				$('.link-cz5p').css('opacity', '0');
 			});
+			$('.bg-pt').mouseover(function() {
+				$('.link-pt').css('opacity', '1');
+			});
+			$('.bg-pt').mouseout(function() {
+				$('.link-pt').css('opacity', '0');
+			});
 
 			// OPEN PROJECTS
 			$('.bg-tl').click(function() {
@@ -494,6 +519,9 @@
 			});
 			$('.bg-dj').click(function() {
 				window.open('https://dojrzewaj.pl/');
+			});
+			$('.bg-pt').click(function() {
+				window.open('https://pagetify.herokuapp.com/');
 			});
 
 			// SCALE PROJECTS
@@ -514,6 +542,9 @@
 			});
 			$('.bg-cz5p-img').hover(function() {
 				$('.bg-cz5p').toggleClass('scale');
+			});
+			$('.bg-pt-img').hover(function() {
+				$('.bg-pt').toggleClass('scale');
 			});
 
 			$('.hamburger').click(function() {
