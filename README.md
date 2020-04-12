@@ -1,6 +1,6 @@
-# My portfolio website
+# My first portfolio website
 
-This is a project of my new, refreshed website.
+This was my first portfolio built in June, 2019.
 
 ## What kind of technologies did I use?
 

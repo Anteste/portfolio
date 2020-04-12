@@ -1,7 +1,7 @@
 {
 	"name": "Bart Zalewski | Front-end Developer",
 	"short_name": "bartzalewski.com",
-	"start_url": "/index.html",
+	"start_url": "/index.php",
 	"display": "standalone",
 	"background_color": "#6B65E7",
 	"theme_color": "#6B65E7",
