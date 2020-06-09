@@ -8,17 +8,17 @@
 		<meta name="apple-mobile-web-app-status-bar" content="#6B65E7" />
 		<meta
 			name="keywords"
-			content="frontend, programmer, coder, web developer, front-end developer, zalewski, bart zalewski, developer, web, javascript, html, css"
+			content="frontend, programmer, coder, web developer, front-end developer, zalewski, bart zalewski, developer, web, javascript, html, css, Anteste, Iliass Alami, back-end developper"
 		/>
-		<meta name="description" content="Bart Zalewski - Front-End Developer" />
-		<meta name="author" content="Bart Zalewski" />
-		<link rel="apple-touch-icon" href="img/logo-96x96.png" />
+		<meta name="description" content="Anteste - Full-Stack Developer" />
+		<meta name="author" content="Anteste" />
+		<link rel="apple-touch-icon" href="img/avatar.png" />
 		<link rel="canonical" href="" />
 		<link rel="manifest" href="manifest.json" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link href="img/favicon.png" rel="shortcut icon" type="image/png" />
+		<link href="img/avatar.png" rel="shortcut icon" type="image/svg" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<title>Bart Zalewski | Front-end Developer</title>
+		<title>Anteste | Full-stack Developer</title>
 	</head>
 	<body>
 		<div id="sidenav" class="sidenav">
@@ -31,11 +31,10 @@
 		<nav class="navbar">
 			<div class="navbar__container">
 				<a href="#">
-					<img
+					 <img
 						loading="lazy"
-						src="img/logo.svg"
+						src="img/nav3.jpg"
 						alt="logo"
-						class="navbar__logo rotate"
 				/></a>
 				<div class="hamburger">
 					<div class="hamburger__wrapper icon">
@@ -77,7 +76,7 @@
 						data-aos="fade-up"
 						data-aos-once="true"
 						class="hero__avatar primary"
-						src="img/avatar.svg"
+						src="img/avatar.png"
 						alt="avatar"
 					/>
 					<img
@@ -85,7 +84,7 @@
 						data-aos="fade-up"
 						data-aos-once="true"
 						class="hero__avatar secondary"
-						src="img/avatar-1.svg"
+						src="img/avatar-1.png"
 						alt="avatar"
 					/>
 				</div>
@@ -95,7 +94,7 @@
 					data-aos-delay="100"
 					class="hero__typo"
 				>
-					Hello, I'm Bart.
+					Hello, I'm Anteste.
 				</p>
 				<p
 					data-aos="fade-up"
@@ -103,14 +102,14 @@
 					data-aos-delay="200"
 					class="hero__sub"
 				>
-					I'm a creative front-end developer.
+					I'm a creative full-stack developer.
 				</p>
 			</div>
 		</div>
 
 		<div class="about" id="section-about">
 			<div class="about__content">
-				<h1 data-aos="fade-up" data-aos-once="true">about me</h1>
+				<h1 data-aos="fade-up" data-aos-once="true">About me</h1>
 			</div>
 		</div>
 
@@ -131,11 +130,7 @@
 						<div class="contain">
 							<h2>Basic info.</h2>
 							<p>
-								I started coding in the December 2018 and I'm self-taught
-								developer. I have serious passion for modern looking websites
-								with a little bit of animations. I love what I'm doing and I'm
-								highly motivated to collaborate with someone. If you are up into
-								some projects, <a href="#section-contact">just let me know!</a>
+								I started coding in the December 2017 and I am self-taught developer. I have serious passion for modern looking websites with a little bit of animations and also for back-end developpement. I love what I am doing and I am highly motivated to collaborate with someone. If you are up into some projects, <a href="#section-contact">just let me know!</a>
 							</p>
 						</div>
 						<img
@@ -151,12 +146,12 @@
 						data-aos-once="true"
 						data-aos-delay="200"
 					>
-						<img
+						 <img
 							loading="lazy"
 							class="face"
-							src="img/face.webp"
-							alt="face icon"
-						/>
+							src="img/avatar.png"
+							alt="Avatar"
+						/> 
 						<img
 							loading="lazy"
 							class="line"
@@ -179,10 +174,8 @@
 									alt="tools icon"
 								/>
 								<p>
-									Visual Studio Code, Figma, Adobe Xd, Photoshop, Cmder,
-									Bootstrap, Materialize, SASS, jQuery, Wordpress, Node.js,
-									React, GatsbyJS, BEM, Git, npm, styled-components, ESLint,
-									Prettier, Babel.
+									PhpStorm, Adobe Photoshop, Git
+									Html/Css, JS, PHP, Symfony, Wordpress.
 								</p>
 							</div>
 							<div class="tools__h2">
@@ -195,7 +188,7 @@
 		</div>
 
 		<div class="projects" id="section-projects">
-			<h1 data-aos="fade-up" data-aos-once="true">my projects</h1>
+			<h1 data-aos="fade-up" data-aos-once="true">My projects</h1>
 			<div class="container">
 				<div class="projects__boxes">
 					<div
@@ -206,50 +199,12 @@
 						<img
 							loading="lazy"
 							class="projects__box--bg bg-pt-img"
-							src="img/bg-pt.gif"
-							alt="pagetify background"
+							src="img/bg-pt.jpg"
+							alt="Travel Agency background"
 						/>
 						<a
 							class="link-pt"
-							href="https://pagetify.com/"
-							target="_blank"
-							rel="noopener"
-							>Click to view</a
-						>
-					</div>
-					<div
-						data-aos="fade-up"
-						data-aos-once="true"
-						class="projects__box bg-cz5p"
-					>
-						<img
-							loading="lazy"
-							class="projects__box--bg bg-cz5p-img"
-							src="img/bg-cz5p.gif"
-							alt="dojrzewaj.pl background"
-						/>
-						<a
-							class="link-cz5p"
-							href="https://dojrzewaj.pl/"
-							target="_blank"
-							rel="noopener"
-							>Click to view</a
-						>
-					</div>
-					<div
-						data-aos="fade-up"
-						data-aos-once="true"
-						class="projects__box bg-dj"
-					>
-						<img
-							loading="lazy"
-							class="projects__box--bg bg-dj-img"
-							src="img/bg-dj.gif"
-							alt="dojrzewaj.pl background"
-						/>
-						<a
-							class="link-dj"
-							href="https://dojrzewaj.pl/"
+							href="https://anteste.yo.fr/travel-agency"
 							target="_blank"
 							rel="noopener"
 							>Click to view</a
@@ -263,12 +218,12 @@
 						<img
 							loading="lazy"
 							class="projects__box--bg bg-sch-img"
-							src="img/bg-sch.gif"
-							alt="schoolify background"
+							src="img/bg-sch.jpg"
+							alt="image-hoster background"
 						/>
 						<a
 							class="link-sch"
-							href="https://schoolify-app.herokuapp.com/"
+							href="https://anteste.yo.fr/image-hoster"
 							target="_blank"
 							rel="noopener"
 							>Click to view</a
@@ -277,18 +232,17 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
-						data-aos-delay="100"
-						class="projects__box bg-tl"
+						class="projects__box bg-cz5p"
 					>
 						<img
 							loading="lazy"
-							class="projects__box--bg bg-tl-img"
-							src="img/bg-tl.gif"
-							alt="telean background"
+							class="projects__box--bg bg-cz5p-img"
+							src="img/bg-dj.jpg"
+							alt="dojrzewaj.pl background"
 						/>
 						<a
-							class="link-tl"
-							href="https://telean-website.herokuapp.com/"
+							class="link-cz5p"
+							href="https://anteste.yo.fr/portfolio-1"
 							target="_blank"
 							rel="noopener"
 							>Click to view</a
@@ -297,55 +251,35 @@
 					<div
 						data-aos="fade-up"
 						data-aos-once="true"
-						data-aos-delay="200"
-						class="projects__box bg-cm"
+						class="projects__box bg-dj"
 					>
 						<img
 							loading="lazy"
-							class="projects__box--bg bg-cm-img"
-							src="img/bg-cm.gif"
-							alt="centrum moto background"
+							class="projects__box--bg bg-dj-img"
+							src="img/bg-cz5p.jpg"
+							alt="dojrzewaj.pl background"
 						/>
 						<a
-							class="link-cm"
-							href="https://reveur.dev/wp/"
+							class="link-dj"
+							href="https://anteste.yo.fr/portfolio-2"
 							target="_blank"
 							rel="noopener"
 							>Click to view</a
 						>
 					</div>
-					<div
-						data-aos="fade-up"
-						data-aos-once="true"
-						data-aos-delay="300"
-						class="projects__box bg-pp"
-					>
-						<img
-							loading="lazy"
-							class="projects__box--bg bg-pp-img"
-							src="img/bg-pp.gif"
-							alt="dark paypal background"
-						/>
-						<a
-							class="link-pp"
-							href="https://github.com/liorgrossman/darkness/blob/master/chrome-extension/themes/websites/paypal.scss"
-							target="_blank"
-							rel="noopener"
-							>Click to view</a
-						>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="contact" id="section-contact">
-			<h1 data-aos="fade-up" data-aos-once="true">contact me</h1>
+			<h1 data-aos="fade-up" data-aos-once="true">Contact me</h1>
 			<form
 				data-aos="fade-up"
 				data-aos-once="true"
 				data-aos-delay="100"
 				method="POST"
-				action="https://formspree.io/me@bartzalewski.com"
+				action="https://formspree.io/xaypjwog"
 			>
 				<input type="text" name="name" placeholder="Name" aria-label="name" />
 				<input
@@ -376,17 +310,17 @@
 						alt="resume"
 						class="social-logo"
 				/></a>
-				<a href="mailto:me@bartzalewski.com"
+				<a href="mailto:/contact@anteste.yo.fr"
 					><img loading="lazy" src="img/mail.svg" alt="mail" class="social-logo"
 				/></a>
 				<a class="my-logo-footer" href="#"
 					><img
 						loading="lazy"
-						src="img/logo.svg"
+						src="img/avatar.png"
 						alt="logo"
 						class="social-logo my-logo"
 				/></a>
-				<a href="https://github.com/bartzalewski" target="_blank" rel="noopener"
+				<a href="https://github.com/Anteste" target="_blank" rel="noopener"
 					><img
 						loading="lazy"
 						src="img/github.svg"
@@ -394,7 +328,7 @@
 						class="social-logo"
 				/></a>
 				<a
-					href="https://www.linkedin.com/in/bartzalewski"
+					href="https://www.linkedin.com/in/ilyasse-alami-533baa193/"
 					target="_blank"
 					rel="noopener"
 					><img
@@ -404,7 +338,7 @@
 						class="social-logo"
 				/></a>
 			</div>
-			<p>Bart Zalewski &copy; 2019</p>
+			<p>Anteste &copy; 2020</p>
 		</div>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -503,25 +437,17 @@
 			});
 
 			// OPEN PROJECTS
-			$('.bg-tl').click(function() {
-				window.open('https://telean-website.herokuapp.com/');
-			});
-			$('.bg-cm').click(function() {
-				window.open('https://reveur.dev/wp/');
-			});
-			$('.bg-pp').click(function() {
-				window.open(
-					'https://github.com/liorgrossman/darkness/blob/master/chrome-extension/themes/websites/paypal.scss'
-				);
-			});
 			$('.bg-sch').click(function() {
-				window.open('https://schoolify.app/');
+				window.open('https://anteste.yo.fr/image-hoster');
+			});
+			$('.bg-cz5p').click(function() {
+				window.open('https://anteste.yo.fr/portfolio-1');
 			});
 			$('.bg-dj').click(function() {
-				window.open('https://dojrzewaj.pl/');
+				window.open('https://anteste.yo.fr/portfolio-2');
 			});
 			$('.bg-pt').click(function() {
-				window.open('https://pagetify.com/');
+				window.open('https://anteste.yo.fr/travel-agency');
 			});
 
 			// SCALE PROJECTS

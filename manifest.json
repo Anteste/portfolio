@@ -1,6 +1,6 @@
 {
-	"name": "Bart Zalewski | Front-end Developer",
-	"short_name": "bartzalewski.com",
+	"name": "Anteste | Full-stack Developer",
+	"short_name": "anteste.yo.fr",
 	"start_url": "/index.php",
 	"display": "standalone",
 	"background_color": "#6B65E7",
@@ -8,8 +8,8 @@
 	"orientation": "portrait-primary",
 	"icons": [
 		{
-			"src": "img/logo-512x512.png",
-			"type": "image/png",
+			"src": "img/avatar.svg",
+			"type": "image/svg",
 			"sizes": "512x512"
 		}
 	]

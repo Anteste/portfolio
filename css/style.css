@@ -619,28 +619,20 @@ p {
   font-weight: 500;
 }
 
-.bg-cm::after {
-  content: 'Centrum Moto';
-}
-
-.bg-pp::after {
-  content: 'Dark PayPal';
-}
-
 .bg-sch::after {
-  content: 'Schoolify';
+  content: 'Image Hoster';
 }
 
 .bg-dj::after {
-  content: 'dojrzewaj.pl';
+  content: 'Portfolio 2';
 }
 
 .bg-cz5p::after {
-  content: 'Co za 500+';
+  content: 'Portfolio 1';
 }
 
 .bg-pt::after {
-  content: 'Pagetify';
+  content: 'Travel Agency';
 }
 
 .link-tl,
