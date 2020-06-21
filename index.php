@@ -310,7 +310,7 @@
 						alt="resume"
 						class="social-logo"
 				/></a>
-				<a href="mailto:/contact@anteste.yo.fr"
+				<a href="mailto:contact@anteste.yo.fr"
 					><img loading="lazy" src="img/mail.svg" alt="mail" class="social-logo"
 				/></a>
 				<a class="my-logo-footer" href="#"
